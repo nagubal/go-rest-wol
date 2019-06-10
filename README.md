@@ -1,6 +1,6 @@
-# GoLang HTTP Server for Remote WOL Requesting from an CSV Computer List
+# Go HTTP Server for Remote WOL Requesting from an CSV Computer List
 
-A HTTP Server who send Wake On Lan Package on an HTTP Request.
+A HTTP Server whch sends Wake On Lan Package on an HTTP Request.
 
 ### Simple Bootstrap UI for the easy Usage.
 
@@ -8,12 +8,12 @@ A HTTP Server who send Wake On Lan Package on an HTTP Request.
 
 ### Simple REST API to let a Machine wake someone up
 
-/api/computer/**<ComputerName>** -  Returns a JSON Object
+/api/wakeup/computer/**<ComputerName>** -  Returns a JSON Object
 
 ```json
 {
   "success":true,
-  "message":"Succesfully Wakeup Computer Computer1 with Mac 64-07-2D-BB-BB-BF on Broadcast IP 192.168.10.254:9",
+  "message":"Successfully Wakeup Computer Computer1 with Mac 64-07-2D-BB-BB-BF on Broadcast IP 192.168.10.254:9",
   "error":null
 }
 ```
@@ -40,6 +40,12 @@ Computer3,FF-B3-95-62-1C-DD,192.168.10.254:9
 ```
 
 ## Docker
+Use supplied docker-compose.yml (adapt port, computer.csv file as necessary) 
+```
+docker-compose up --build -d
+```
+Or directly:
+
 ```
 docker build -t go-rest-wol .
 docker run go-rest-wol

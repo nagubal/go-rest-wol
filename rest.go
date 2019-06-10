@@ -43,7 +43,7 @@ func restWakeUpWithComputerName(w http.ResponseWriter, r *http.Request) {
 				} else {
 					// Horray we send the WOL Packet succesfully
 					result.Success = true
-					result.Message = fmt.Sprintf("Succesfully Wakeup Computer %s with Mac %s on Broadcast IP %s", c.Name, c.Mac, c.BroadcastIPAddress)
+					result.Message = fmt.Sprintf("Successfully Wakeup Computer %s with Mac %s on Broadcast IP %s", c.Name, c.Mac, c.BroadcastIPAddress)
 					result.ErrorObject = nil
 				}
 			}
