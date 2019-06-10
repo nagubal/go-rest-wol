@@ -1,10 +1,10 @@
 # Go HTTP Server for Remote WOL Requesting from an CSV Computer List
 
-A HTTP Server whch sends Wake On Lan Package on an HTTP Request.
+A HTTP Server which sends Wake On Lan Package on an HTTP Request.
 
 ### Simple Bootstrap UI for the easy Usage.
 
-![Screenshot](https://github.com/daBONDi/go-rest-wol/raw/master/screenshot.PNG)
+![Screenshot](screenshot.PNG)
 
 ### Simple REST API to let a Machine wake someone up
 
