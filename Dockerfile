@@ -2,6 +2,7 @@ FROM golang:alpine AS builder
 RUN apk add --no-cache git
 RUN go get -d github.com/gorilla/handlers \
   github.com/gorilla/mux \
+  github.com/sabhiram/go-wol \
   github.com/gocarina/gocsv
 
 WORKDIR /app
