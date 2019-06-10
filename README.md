@@ -13,7 +13,7 @@ A HTTP Server which sends Wake On Lan Package on an HTTP Request.
 ```json
 {
   "success":true,
-  "message":"Successfully Wakeup Computer Computer1 with Mac 64-07-2D-BB-BB-BF on Broadcast IP 192.168.10.254:9",
+  "message":"Magic Packet sent to Computer1 with MAC 64-07-2D-BB-BB-BF on Broadcast IP 192.168.10.254:9",
   "error":null
 }
 ```
