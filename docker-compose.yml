@@ -10,7 +10,7 @@ services:
 
     # Warten auf die neue Version 
     volumes:
-      - ./computer.csv:/app/computer.csv
+      - ./hosts.csv:/app/computer.csv
 #networks:
 #  default:
 #    external:
