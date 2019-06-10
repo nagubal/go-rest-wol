@@ -1,14 +1,12 @@
 package main
 
-// Stolen from https://github.com/sabhiram/go-wol
-
 import (
 	"bytes"
 	"encoding/binary"
 	"errors"
 	"log"
 	"net"
-"github.com/sabhiram/go-wol"
+        "github.com/sabhiram/go-wol"
 )
 
 // This function gets the address associated with an interface
