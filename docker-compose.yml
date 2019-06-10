@@ -1,14 +1,17 @@
 version: '3'
 services:
   wol:
-    image: "dabondi/go-rest-wol"
+    #image: "dabondi/go-rest-wol"
+    container_name: go-rest-wol
+    build: 
+      context: .
     ports:
-      - "8080:8080"
+      - "7080:8080"
 
     # Warten auf die neue Version 
-    #volumes:
-    #  - c:\temp:temp
-networks:
-  default:
-    external:
-      name: nat
+    volumes:
+      - ./computer.csv:/app/computer.csv
+#networks:
+#  default:
+#    external:
+#      name: nat
