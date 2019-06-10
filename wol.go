@@ -91,3 +91,4 @@ func SendMagicPacket(macAddr, bcastAddr, iface string) error {
 
 	return nil
 }
+
